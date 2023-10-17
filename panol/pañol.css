@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-nav: #e6e6e6;
+    --color-fondo: #f7f7f7;
+    --color-oscuro: #a3a3a3;
+}
+
+html{
+    background: var(--color-fondo);
+}
+
+option{
+    text-align: center;
+}
+
+button{
+    background: var(--color-oscuro);
+    padding: 2px 7px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+button:hover{
+    background: #000;
+    color: var(--color-fondo);
+}
+
+/*NAV*/
+nav{
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--color-nav);
+    height: 5vh;
+    box-shadow: 1px 1px 3px var(--color-oscuro);
+}
+
+nav a, nav div{
+    width: 50%;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#nav-gestion{
+    display: flex;
+    justify-content: space-around;
+}
+/*NAV*/
+
+/*INGREOS*/
+
+article{
+    margin-top: 5vh;
+}
+
+section{
+    height: 95vh;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form div{
+    margin: 5px 0;
+}
+
+
+#contenedor-lista table{
+    width: 95vw;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+tr td{
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+/*INGREOS*/
+
+/*VOLVER*/
+
+.arrow-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .arrow-icon {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+/*VOLVER*/

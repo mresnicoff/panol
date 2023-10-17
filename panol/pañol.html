@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pañol.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Pañol</title>
+    
+</head>
+<body id="stop">
+    <div class="arrow-button">
+        <a href="#top"><span class="arrow-icon">&#8593;</span>  Volver</a>
+      </div>
+      
+    <nav>
+        <a href="pañol.html">Ingresar/Lista</a>
+        <div id="nav-gestion">
+            <a href="herramientas.html">Herramienta</a>
+            <a href="profesores.html">Profesores</a>
+            <a href="cursos.html">Curso</a>
+            <a href="devoluciones.html">Devoluciones</a>
+        </div>
+    </nav>
+    <article id="contenedor">
+        <section id="contenedor-ingresar" class="flex">
+            <h3>Crear Prestamo</h3>
+            <form action="javascript:handleSubmit()" class="flex">
+                <div>
+                    <label>Apellido</label>
+                    <select name="apellido" id="apellido">
+                    </select>
+                    <label>Curso</label>
+                    <select id="curso" name="curso">
+                    </select>
+                </div>
+                <div id="contenedor-herramientas">  
+                    <label>Herramienta</label>
+                    <select name="herramienta" class="herramienta">
+                    </select>
+                    <label>Cantidad</label>
+                    <input name="cantidad" id="cantidad" class="cantidad"/>
+                                       <button id="agregar-herramienta">Agregar</button>
+                </div>
+                <div id="lista-herramientas" class="flex">
+                </div>
+                <button type="submit">Enviar Prestamo</button>
+            </form>
+        </section>
+        <section id="contenedor-lista" class="flex">
+            <!--
+            <h3>Lista de Prestamos</h3>
+            <table>
+                <caption>
+                    <th>Docente</th>
+                    <th>Curso</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Devolucion</th>
+                    <th>Inventario</th>
+                </caption>
+                <tr>
+                    <td class="apellido">Marcela</td>
+                    <td class="curso">1°2°</td>
+                    <td class="fecha">12-12-23</td>
+                    <td class="hora">23:10 hrs</td>
+                    <td class="devolucion"></td>
+                    <td class="inventario">
+                        <button>ver</button>
+                        <button>devolver</button>
+                        <button>modificar</button>
+                    </td>
+                </tr>
+            </table>
+-->
+        </section>
+    </article>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="pañol.js"></script>
+</body>
+</html>

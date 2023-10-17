@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-nav: #e6e6e6;
+    --color-fondo: #f7f7f7;
+    --color-oscuro: #c5c5c5;
+}
+
+html{
+    background: var(--color-fondo);
+}
+
+section{
+    margin: 20px 0;
+}
+
+button{
+    background: var(--color-oscuro);
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px solid #9b9b9b;
+    margin-top: 5px;
+}
+
+/*NAV*/
+nav{
+    margin-top: -5vh;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--color-nav);
+    height: 5vh;
+    box-shadow: 1px 1px 3px var(--color-oscuro);
+}
+
+nav a, nav div{
+    width: 50%;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#nav-gestion{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*NAV*/
+
+article{
+    margin-top: 5vh;
+}
+
+/*GESTION*/
+
+form div{
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+}
+
+form div input, #input-buscar{
+    outline: none;
+    border: 1px solid var(--color-oscuro);
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.botones button{
+    margin: 2px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+/*GESTION*/
+
+/*TABLA GESTION DE HERRAMIENTAS*/
+
+.contenedor-lista table{
+    width: 20vw;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+tr td{
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+}
+
+/*TABLA GESTION DE HERRAMIENTAS*/
+
+/*VOLVER*/
+
+.arrow-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .arrow-icon {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+/*VOLVER*/
